@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins';
+    }
+
+    body{
+     
+      background-image: linear-gradient(hsl(0, 100%, 74%),hsl(0, 100%, 74%)),url(images/bg-intro-desktop.png);
+    background-position: center;
+    background-size: cover;
+  
+      
+    }
+    
+    .whole-section{
+     height: 800px;
+     width: 1700px;
+      background-image: url(images/bg-intro-desktop.png);
+    
+      background-size: cover;
+      position: relative
+      
+    }
+/*--left---------------------------------------------*/
+    .left{
+      position: absolute;
+      height: 40%;
+      width:32%;
+      left: 16%;
+      top: 37%;
+      color: white;
+      font-size: 40px;
+      font-weight: 700;
+      
+      
+    }
+    
+    .left-heading{
+      width: 70%;
+    }
+    .descript{
+      margin-top: 4%;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    
+/*--right------------------6 33--------------------------*/
+    .right{
+      position:absolute;
+      height: 64%;
+      width: 33%;
+      top:15%;
+      left:52%;
+     
+    }
+     .right-head{
+      height: 10%;
+      width: 100%;
+      background-color: hsl(248, 32%, 49%);
+      border-radius: 10px;
+      box-shadow: 0px 6px 0px  hsla(0, 12%, 13%, 0.142) ;
+      color: white;
+      
+     }
+     .trial-text-main-container{
+      padding-top: 2%;
+      
+     }
+     .trial-text-container{
+        margin-left: 0%;
+        
+        color:white
+     }
+     .trial-text{
+      margin-left:20%;
+      
+      font-weight: 600;
+     }
+
+     .input-form{
+      width: 100%;
+      height: 90%;
+      background-color: white;
+      margin-top: 27px;
+      border-radius: 10px;
+      position:relative;
+
+     }
+/*-------first input-------------*/
+     .input-name{
+      margin-left: 7%;
+      margin-top: 7%;
+      height: 10%;
+      width: 80%;
+      outline:none;
+      border: 2px solid;
+      border-radius: 5px;
+      font-weight: 500;
+      padding-left:25px;
+      border-color: hsl(246, 25%, 77%);
+      
+      position:absolute;
+      
+      
+     }
+     .label{
+      position:absolute;
+      top:11%;
+      left:12%;
+      font-size: 15px ;
+      font-weight: 500;
+      color: hsl(249, 10%, 26%);
+      opacity: 0.7;
+     }
+
+     input:focus,
+     input:valid{
+      color: hsl(249, 10%, 26%);
+      border:2px solid hsl(248, 32%, 49%);
+      font-weight: 600;
+     
+     }
+     input:focus +.label,
+     input:valid +.label{
+      opacity: 0;
+     }
+
+/*------------second input------------*/
+.input-name2{
+      margin-left: 7%;
+      margin-top: 20%;
+      height: 10%;
+      width: 80%;
+      outline:none;
+      border: 2px solid;
+      border-radius: 5px;
+      font-weight: 500;
+      padding-left:25px;
+      border-color: hsl(246, 25%, 77%);
+      
+      position:absolute;
+      
+      
+     }
+     .label2{
+      position:absolute;
+      top:27%;
+      left:12%;
+      font-size: 15px ;
+      font-weight: 500;
+      color: hsl(249, 10%, 26%);
+      opacity: 0.7;
+     }
+
+     input:focus,
+     input:valid{
+      color: hsl(249, 10%, 26%);
+      border:2px solid hsl(248, 32%, 49%);
+      font-weight: 600;
+     
+     }
+     input:focus +.label2,
+     input:valid +.label2{
+      opacity: 0;
+     }
+/*----------third input-------------*/
+.input-name3{
+      margin-left: 7%;
+      margin-top: 33%;
+      height: 10%;
+      width: 80%;
+      outline:none;
+      border: 2px solid;
+      border-radius: 5px;
+      font-weight: 500;
+      padding-left:25px;
+      border-color: hsl(246, 25%, 77%);
+      
+      position:absolute;
+      
+      
+     }
+     .label3{
+      position:absolute;
+      top:43%;
+      left:12%;
+      font-size: 15px ;
+      font-weight: 500;
+      color: hsl(249, 10%, 26%);
+      opacity: 0.7;
+     }
+
+     input:focus,
+     input:valid{
+      color: hsl(249, 10%, 26%);
+      border:2px solid hsl(248, 32%, 49%);
+      font-weight: 600;
+     
+     }
+     input:focus +.label3,
+     input:valid +.label3{
+      opacity: 0;
+     }
+
+ /*----------fourth input-------------*/
+.input-name4{
+      margin-left: 7%;
+      margin-top: 46%;
+      height: 10%;
+      width: 80%;
+      outline:none;
+      border: 2px solid;
+      border-radius: 5px;
+      font-weight: 500;
+      padding-left:25px;
+      border-color: hsl(246, 25%, 77%);
+      
+      position:absolute;
+      
+      
+     }
+     .label4{
+      position:absolute;
+      top:58%;
+      left:12%;
+      font-size: 15px ;
+      font-weight: 500;
+      color: hsl(249, 10%, 26%);
+      opacity: 0.7;
+     }
+
+     input:focus,
+     input:valid{
+      color: hsl(249, 10%, 26%);
+      border:2px solid hsl(248, 32%, 49%);
+      font-weight: 600;
+     
+     }
+     input:focus +.label4,
+     input:valid +.label4{
+      opacity: 0;
+     }
+
+
+     .claim-button{
+      position:absolute;
+      background-color: hsl(154, 59%, 51%);
+      color: white;
+      height:10%;
+      width: 85%;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top:61%;
+      margin-left:7%;
+      transition: background-color 0.3s ease;
+      font-weight: 600;
+      transition:all 0.2s ease;
+
+     }
+     .claim-button:hover{
+      background-color: hsl(154, 60%, 53%);
+      cursor: pointer;
+     }
+     .claim-button:active{
+      transform:scale(0.96);
+     }
+
+     .terms-conditions{
+      position: absolute;
+      top: 86%;
+      left: 17%;
+      font-size: 9px;
+      font-weight: 600;
+      color:  hsl(246, 25%, 77%);
+     }
+     .link{
+      color: hsl(0, 100%, 74%);
+      font-weight:600;
+      
+     }
+
+  </style>
+</head>
+<body>
+<div class="whole-section">
+
+  <div class="left">
+    <div class="left-heading">Learn to code by watching others</div>
+    <div class="descript">
+      See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+  but understanding how developers think is invaluable. 
+    </div>
+  </div>
+
+
+  <div class="right">
+   <div class="right-head"><div class="trial-text-main-container"><span class="trial-text">Try it free 7days</span> <span class="trial-text-container">then $20/mo, thereafter</span>  </div></div>
+   <div class="input-form">
+    <input type="text" class="input-name" required>
+    <div class="label">First Name</div>
+
+    <input type="text" class="input-name2" required>
+    <div class="label2">Last Name</div>
+
+    <input type="text" class="input-name3" required>
+    <div class="label3">Email Address</div>
+
+    <input type="text" class="input-name4" required>
+    <div class="label4">Password</div>
+
+    <button type="submit" class="claim-button">CLAIM YOUR FREE TRIAL</button>
+
+    <div class="terms-conditions">
+      By clicking "CLAIM YOUR FREE TRIAL", you agree to our <span class="link">Terms and Services</span> .
+    </div>
+   </div>
+
+   
+  </div>
+   
+</div>
+  
+  
+</body>
+</html>
